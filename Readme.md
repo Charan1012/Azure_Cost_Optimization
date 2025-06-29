@@ -1,7 +1,5 @@
 # Azure Cosmos DB Cost Optimization Solution
 
-![Architecture Diagram](images/Architecture_Diagram.png)
-
 ## 📌 Overview
 
 Production-grade solution to reduce Azure Cosmos DB costs by **automatically archiving** infrequently accessed data to Blob Storage Cool Tier, cutting storage costs by **~95%**. Implements tiered storage with seamless data retrieval.
