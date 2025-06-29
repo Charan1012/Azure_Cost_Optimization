@@ -1,0 +1,8 @@
+Initial Task
+"Design a cost optimization strategy for Azure Cosmos DB using tiered storage with Azure Blob Storage."
+
+Implementation
+"Give Intiution of the solution like how to approach it in Architecture way - don't skip anything. I'm new to Azure."
+
+Debugging
+"How to seed test data into Cosmos DB?"
