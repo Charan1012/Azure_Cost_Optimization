@@ -1,0 +1,16 @@
+# Pseudocode: Read API
+def get_record(req):
+    record_id = req.params.get('id')
+    
+    # Try hot tier first
+    record = cosmos_client.get(record_id)
+    if record:
+        return record
+    
+    # Check cold tier
+    blob_name = f"archived/{record_id}.json"
+    if blob_client.exists(blob_name):
+        archived_data = blob_client.download_json(blob_name)
+        return archived_data
+    
+    return HTTP 404
